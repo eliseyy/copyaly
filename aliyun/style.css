@@ -9,7 +9,8 @@ a{
 }
 body{
     overflow-x: hidden;
-    background: #000;
+    background: rgba(0,0,0,0.9);
+    font-family: Roboto-Regular,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
 }
 .container{
     width:90%;
@@ -24,7 +25,7 @@ ul,ol{
     position:fixed;
     width: 100%;
     z-index: 1;
-    background-color: #000;
+    background: rgba(0,0,0,0.9);
 }
 .header .container a{
     color:#fff;
@@ -44,12 +45,20 @@ ul,ol{
     margin-right:20px;
     position: relative;
 }
-.header .container ul li a:hover{
-    color:#00C1DE;
-    border-bottom:1.5px solid #00C1DE;
+.header ul li .line{
+    border:1px solid #00C1DE;
+    background: #00C1DE;
+    margin-top:-1px;
+    display: none;
+}
+.header ul li:hover .line{
+    display: block;
 }
 .header .container ul li a {
     padding:25px 0;
+}
+.header .container ul li a:hover{
+    color:#00C1DE;
 }
 .header .container .hd-right{
    float:right;
@@ -58,6 +67,9 @@ ul,ol{
 .header .container .hd-right .login{
     margin-right:20px;
 }
+.header .container .hd-right .login{
+    color:#00C1DE;
+}
 .header .container .hd-right .register{
     padding:10px 25px;
     background: #00C1DE;
@@ -65,8 +77,9 @@ ul,ol{
 .header .container .hd-right .register:hover{
     background:#20d9e5;
 }
+
 .banners{
-    background: #373D41;
+    background: linear-gradient(-225deg,#000 0,#3B4145 100%);
     position: relative;
     height:700px;
 }
@@ -124,6 +137,20 @@ ul,ol{
     font-weight: 200;
     font-size: 18px;
     margin-top:10px;
+}
+.banners .item-list p{
+    font-size: 14px;
+    color:rgba(255,255,255,.69);
+    margin-top:5px;
+}
+.banners .item-list .explain{
+    display: none;
+}
+.banners .item-list .item:hover .main{
+    display: none;
+}
+.banners .item-list .item:hover .explain{
+    display: block;
 }
 .banners .item-list>div{
     float:left;
@@ -186,7 +213,7 @@ ul,ol{
     color:#fff;
 }
 .products ul li .pro-icon{
-    background-color:#0c0c0c;
+    background: #3B4145;
     padding: 50px 0;
 }
 .products ul li  h4{
@@ -202,8 +229,9 @@ ul,ol{
     padding:8px 0;
 }
 .products ul li ol{
+    height:280px;
     padding:10px 0 30px 0;
-    background-color: #413f3f;
+    background-color: #4f5357;
 }
 .products ul li:hover .pro-icon{
     background: linear-gradient(-225deg,#00C1DE 0,#1C90F6 100%);
@@ -216,6 +244,9 @@ ul,ol{
 }
 .products .pro-list .expand:hover{
     transform: scale(1.1,1.05);
+}
+.products .pro-list .expand:hover li{
+    padding:0;
 }
 .products ul li:hover ol{
     background-color: #fff;
@@ -345,8 +376,8 @@ ul,ol{
     color:#fff;
 }
 .why-chioce .col-md-4 p{
-    color:#7d7b7b;
-    font-size: 22px;
+    color:rgba(255,255,255,.69);
+    font-size: 20px;
     margin-top:20px;
 }
 .why-chioce .col-md-4 span{
@@ -508,6 +539,17 @@ ul,ol{
     top:-8px;
     left:25px;
 }
+.local-global .col-md-7 .location-name .name-left{
+    width: 68px;
+    height: 32px;
+    background: #3B4145;
+    color:#fff;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    top:-8px;
+    left:-86px;
+}
 .local-global .col-md-7 .name .location-arrow{
      border-width: 5px;
      border-style: solid;
@@ -516,6 +558,14 @@ ul,ol{
      top:8px;
      border-color: transparent #3B4145 transparent transparent;
  }
+.local-global .col-md-7 .name-left  .location-arrow-left{
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    left: 68px;
+    top:8px;
+    border-color: transparent  transparent transparent #3B4145;
+}
 .local-global .col-md-7 .location-name-inner{
     width:165px;
     height:54px;
@@ -529,6 +579,19 @@ ul,ol{
     padding:5px 15px;
     display: none;
 }
+.local-global .col-md-7 .location-name-left{
+    width:165px;
+    height:54px;
+    background: linear-gradient(-225deg,#1C90F6 0,#00C1DE 100%);
+    color:#fff;
+    position: absolute;
+    top:-8px;
+    left:-183px;
+    font-size: 14px;
+    line-height: 22px;
+    padding:5px 15px;
+    display:none;
+}
 .local-global .col-md-7 .location-name-inner .location-arrow{
     border-width: 5px;
     border-style: solid;
@@ -536,6 +599,14 @@ ul,ol{
     left: -10px;
     top:8px;
     border-color: transparent #1C90F6 transparent transparent;
+}
+.local-global .col-md-7 .location-name-left .location-arrow-left{
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    left: 165px;
+    top:8px;
+    border-color: transparent transparent transparent  #1C90F6;
 }
 .local-global .col-md-7 .country:hover .name{
     display: none;
@@ -758,7 +829,7 @@ ul,ol{
     color:#fff;
 }
 .footer{
-    background: #3B4145;
+    background: #4B5054;
     color:#fff;
     padding:38px 0;
 }
@@ -807,15 +878,17 @@ ul,ol{
     width:20px;
     height:20px;
     vertical-align: middle;
+    margin-left:-10px;
 }
 .footer .families{
+    line-height:30px;
     height:30px;
     margin-top:10px;
 }
 .footer .families a:hover{
     color:#00C1DE;
 }
-.footer .families a{
+.footer .families  a{
     float:left;
     display:block;
     font-size: 14px;
