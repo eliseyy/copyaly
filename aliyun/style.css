@@ -34,34 +34,30 @@ ul,ol{
     width:168px;
     float:left;
 }
-.header .container ul{
+.header .container .main-list{
     float:left;
-    margin-left:40px;
-    line-height:70px;
+    margin-left:60px;
     list-style: none;
+    line-height: 70px;
 }
-.header .container ul li{
+.header .container .main-list li{
     float:left;
-    margin-right:20px;
+    margin-right:30px;
     position: relative;
 }
-.header ul li .line{
+.header .main-list .line{
     border:1px solid #00C1DE;
     background: #00C1DE;
-    margin-top:-2px;
     display: none;
 }
-.header ul li:hover .line{
+.header .main-list li:hover .line{
     display: block;
 }
-.header .container ul li a {
-    padding:25px 0;
-}
-.header .container ul li a:hover{
+.header .container .main-list li a:hover{
     color:#00C1DE;
 }
 .header .container .hd-right{
-   float:right;
+    float:right;
     line-height: 70px;
 }
 .header .container .hd-right .login{
@@ -270,6 +266,7 @@ ul,ol{
     background-size:100% 700px;
     padding-bottom:50px;
     clear:both;
+    position: relative;
 }
 .solutions h3{
     text-align: center;
@@ -312,10 +309,27 @@ ul,ol{
     font-size: 14px;
 }
 .solutions .so-content{
-    display: block;
+    width:75%;
+    position: absolute;
+    top:120px;
+    left:35%;
+}
+.solutions .youxi{
+    width:75%;
+    position: absolute;
+    top:100px;
+}
+.solutions .fangan{
     float:left;
-    margin-left:5%;
-    margin-top:130px;
+    position: absolute;
+    top:100px;
+    display: none;
+}
+.solutions  .jianzhan{
+    display: block;
+}
+.solutions  .youxi{
+    display: none;
 }
 .solutions .so-content h5{
     font-size: 24px;
@@ -350,6 +364,9 @@ ul,ol{
     margin-right:3%;
     padding:15px 0;
     position:relative;
+}
+.solutions .so-content .icon-solution-arrow{
+    font-size: 14px;
 }
 .solutions .so-content ol li:hover{
     background: linear-gradient(-225deg,#00C1DE 0,#1C90F6 100%);
