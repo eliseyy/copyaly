@@ -49,6 +49,7 @@ ul,ol{
     border:1px solid #00C1DE;
     background: #00C1DE;
     display: none;
+    margin-top:-1.5px;
 }
 .header .main-list li:hover .line{
     display: block;
@@ -331,6 +332,7 @@ ul,ol{
 .solutions  .youxi{
     display: none;
 }
+
 .solutions .so-content h5{
     font-size: 24px;
     font-weight: normal;
