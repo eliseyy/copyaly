@@ -13,7 +13,7 @@ body{
     font-family: Roboto-Regular,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
 }
 .container{
-    width:90%;
+    width:80%;
     max-width:1600px;
     margin:0 auto;
 }

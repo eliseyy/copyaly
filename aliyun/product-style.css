@@ -1,0 +1,155 @@
+.p-banner{
+    position: absolute;
+    top:70px;
+    width:100%;
+    height:350px;
+    background: url(images/chanpinyufuwu-bg.png)no-repeat center;
+    background-size: 100%;
+}
+.p-banner h1{
+    color:#fff;
+    position: absolute;
+    top:80px;
+    padding-left:10px;
+    font-weight: normal;
+    font-size: 46px;
+}
+.product-list{
+    position: absolute;
+    top:420px;
+    background-color: #fff;
+    height:auto;
+    padding-top:50px;
+}
+.product-list .hd{
+    border-top: 4px solid transparent;
+}
+.product-list .col-md-6:hover .hd{
+    border-top: 4px solid #25b7f4;
+}
+.product-list .hd  h4{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.product-list .hd  p{
+    font-size: 14px;
+    padding-top:10px;
+    text-align: left;
+    color: #666;
+}
+.p-container{
+    width:75%;
+    margin:0 auto;
+}
+.product-list .col-md-6{
+    width:47%;
+    height:450px;
+    float:left;
+    display: block;
+    margin-right:3%;
+    border: 1px solid #f4f7fa
+}
+.product-list .col-md-6 .hd{
+    height:180px;
+    text-align: center;
+    background-color: #f4f7fa;
+    padding:25px 20px;
+}
+.product-list ul li{
+    padding:10px 0;
+}
+.product-list ul li a{
+    color: #666;
+    font-size: 14px;
+}
+.product-list ul li:hover{
+    background-color:#9acce6;
+}
+.product-list ul li:hover a{
+    color:#fff;
+}
+.product-list .col-md-6 span{
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+    margin-right:20px;
+    background: url(images/product-icon-1x.png)no-repeat;
+    vertical-align: middle;
+}
+.product-list .list01 li:first-child span{
+
+}
+.p-tips{
+    position: absolute;
+    top:2670px;
+    width:100%;
+    background: #fff;
+}
+.p-tips .p-container{
+    width:80%;
+    margin:0 auto;
+    border-top:1px solid #999;
+}
+.p-tips ul li{
+    width:33%;
+    float:left;
+    display: block;
+    padding:50px 0;
+    text-align: center;
+}
+.p-tips ul li a{
+    color:#000;
+    font-size: 18px;
+}
+.p-tips ul li a:hover{
+    color:#00C1DE;
+}
+.p-tips ul li a span{
+    display: block;
+    background: url(images/icon.png);
+    width:64px;
+    height:64px;
+    margin:0 auto;
+    margin-bottom:15px;
+}
+.p-tips ul li a .img01{
+    background-position: -206px -128px;
+}
+.p-tips ul li a .img02 {
+    background-position: -64px -64px;
+}
+.p-tips ul li a .img02 {
+    background-position: -502px -64px;
+}
+.p-zhuce{
+    position: absolute;
+    top:2874px;
+    background: url(images/chanpinyufuwu-downbg.png)no-repeat;
+    width:100%;
+    height:150px;
+    background-size: 100%;
+}
+.p-zhuce h3{
+    text-align: center;
+}
+.p-zhuce h3 a {
+    padding: 7px 32px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+    font-weight: normal;
+}
+.p-zhuce h3 a:hover{
+    background-color: #fff;
+    color:#000;
+}
+.p-links{
+    position: absolute;
+    top:3024px;
+    width:100%;
+}
